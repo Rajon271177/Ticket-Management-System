@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUB Management System</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+<div class="background-img">
+<div class="admission-section">
+    <form id="admission-form">
+        <h2>Admission Form</h2>
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="text" id="seat" placeholder="Phone Number" required><br>
+        <input type="date" id="date" placeholder="Date of birth" required><br>
+        <input type="text" id="from" placeholder="Present Address" required><br>
+        <input type="text" id="to" placeholder="Permanent Address" required><br>
+        <input type="submit" value="Apply">
+    </form>
+    <button id="view-history-btn">View History</button>
+</div>
+</div>
+<div id="ticket-history" style="display: none;">
+    <h3>Admission History</h3>
+    <table id="history-table">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Date of Bir</th>
+                <th>Present Add.</th>
+                <th>Permanent Add</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+            
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
